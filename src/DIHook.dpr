@@ -31,7 +31,7 @@ uses
   DIHookUtil,
   DIMap1, DIMap2,
   EZDSLHsh in '\DL\ezdsl31\EZDSLHsh.PAS',
-  Bsearch3 in '\dl\Lib\BSearch3.pas'.
+  Bsearch3 in '\dl\Lib\BSearch3.pas',
   Dialogs;
 
 {$R *.res}
