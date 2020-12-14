@@ -28,12 +28,10 @@ uses
   SysUtils;
 
 const
-// TAU
-//UTkee: array [0..79] of ansiístring =(
-//UIkee: array [0..337] of ansistring =(
-UIkee: array [0..90] of ansistring =(
+// TAU Inscript
+UIkee: array [0..92] of ansistring =(
 { Vowels}
-'d',      'e',      'f',      'r',    'g',      't',      'z',      's',    'w',   '`',
+'d',      'e',      'f',      'r',    'g',      't',      'z',      's',    'w',   '|',   '`',
 'a',      'q', 'X', 'x',           '_',
 { Consonants}
 'k', 'K', 'i', 'I', 'U',
@@ -67,16 +65,19 @@ UIkee: array [0..90] of ansistring =(
 'kz',
 'ks',
 'kw',
+
+'k\',
 'k`',
 'ka',
 'kq'
 );
 
 //UTFee: array [0..159] of integer =(
-//UIFee: array [0..1351] of integer =(
-UIFee: array [0..363] of integer =(
+UIFee: array [0..371] of integer =(
 { Vowels}
   $B85,0,0,0,    $B86,0,0,0,    $B87,0,0,0,    $B88,0,0,0,    $B89,0,0,0,    $B8A,0,0,0,    $B8E,0,0,0,    $B8F,0,0,0,    $B90,0,0,0,
+//  CANDRA O
+  $B91,0,0,0,
   $B92,0,0,0,    $B93,0,0,0,    $0B94,0,0,0,
   $901,0,0,0,    $B82,0,0,0,    $B83,0,0,0,
 { Consonants}
@@ -108,10 +109,13 @@ UIFee: array [0..363] of integer =(
   $BC0,0,0,0,
   $BC1,0,0,0,
   $BC2,0,0,0,
+//  VOCALIC R
   $BCD,$BB0,$BC1,0,
   $BC6,0,0,0,
   $BC7,0,0,0,
   $BC8,0,0,0,
+//  CANDRA O
+  $BC9,0,0,0,
   $BCA,0,0,0,
   $BCB,0,0,0,
   $BCC,0,0,0
